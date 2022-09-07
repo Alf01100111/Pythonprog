@@ -1,4 +1,5 @@
 # Задайте список из k чисел последовательности (1 + 1\k)^k и выведите на экран их сумму.
+import math
 import array
 
 k = int(input("Введите К "))
@@ -11,4 +12,4 @@ for i in range(1,k+1):
     sum += array[i-1]
 
 print(array)
-print(sum)
+print(round(sum,3))
