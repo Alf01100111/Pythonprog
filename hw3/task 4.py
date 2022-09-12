@@ -6,3 +6,11 @@
 # - 3 -> 11
 # - 2 -> 10
 
+def dec_in_duo(n) -> str:
+
+    if (n > 1):
+        dec_in_duo(n//2)
+    print(n % 2, end='')
+
+num = input("Введите число в десятичной системе счисления ")
+print(f"{num} -> {dec_in_duo(int(num))}")
