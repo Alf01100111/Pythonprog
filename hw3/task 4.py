@@ -13,4 +13,4 @@ def dec_in_duo(n) -> str:
     print(n % 2, end='')
 
 num = input("Введите число в десятичной системе счисления ")
-print(f"{num} -> {dec_in_duo(int(num))}")
+dec_in_duo(int(num))
