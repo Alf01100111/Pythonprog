@@ -30,7 +30,7 @@ print(non_repeat(a))
 #     is_unic = False
 
 #     for j in range(0,len(arr)):
-#         if (arr[i] != arr[j]) and i!=j:
+#         if (arr[i] != arr[j]) and (i!=j):
 #             is_unic == True
 
 #     if is_unic == True:
