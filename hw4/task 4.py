@@ -29,5 +29,5 @@ while i >= 0:
 
 print(res)
 
-with open('c:\\Users\\Андрей\\Desktop\\Python HW\\hw4\\myfile.txt','w') as f:
+with open('myfile.txt','w') as f:
     f.write(res)
