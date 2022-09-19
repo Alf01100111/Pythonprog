@@ -8,8 +8,9 @@
 
 from random import randint
 
-rnge_cand = 5
-candies = 27
+rnge_cand = 28
+candies = 2021
+
 
 
 def ht(num)->list:   
@@ -22,13 +23,14 @@ def ht(num)->list:
     return res
 
 def how_many_take(can, rngcan) ->int:
-    res = can//rngcan * rngcan + 1
+    
+    res = can%(rngcan+1)
     if (can//rngcan == 0) or (can == rngcan):
         return can
     elif can - res < 1:
         return rngcan
     else:
-        return can - res
+        return res
 
 whose_turn = ht(candies)
 in_hand = 0
